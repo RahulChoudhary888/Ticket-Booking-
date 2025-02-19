@@ -14,7 +14,7 @@ RUN npm install
 COPY . .
 
 # Expose the port that your app will run on
-EXPOSE 3078
+EXPOSE 3000
 
 # Command to run the app (use nodemon for development or node for production)
 CMD [ "npm", "run", "migrate:up" ]
