@@ -6,7 +6,7 @@ services:
     restart: always
     container_name: api
     ports:
-      - 3078:3000
+      - 3000:3000
     volumes:
       - ./:/app
     depends_on:
@@ -27,7 +27,7 @@ services:
       MYSQL_DATABASE: ticketBooking
       MYSQL_ROOT_PASSWORD: admin
     ports:
-      - 3310:3306
+      - 3306:3306
     networks:
       - node_network
 
